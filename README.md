@@ -18,8 +18,7 @@ $aws_secret='3P..........................o8';
 $aws_bucket='inpic';
 $aws_site='http://s3.amazonaws.com';
 $cloudfront_site='http://image.company_name.com';
-```
-4. Run this serve on domain **gyazo.yourdomain.com**, 80 port
+```4. Run this serve on domain **gyazo.yourdomain.com**, 80 port
 
 # Setup client
 ## OS X
