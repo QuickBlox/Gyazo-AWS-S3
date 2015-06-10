@@ -36,4 +36,12 @@ CGI = '/index.php'
 ...
 
 ## Windows
-...
+1. Get Gyazowin src code https://github.com/gyazo/Gyazowin
+2. Open **gyazowin.cpp** and replace settings
+3. Recompile an app
+
+Example of updated settings:
+```cpp
+const TCHAR* UPLOAD_SERVER	= _T("gyazo.yourdomain.com");
+const TCHAR* UPLOAD_PATH	= _T("/index.php");
+```
