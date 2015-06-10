@@ -19,6 +19,8 @@ $aws_bucket='inpic';
 $aws_site='http://s3.amazonaws.com';
 $cloudfront_site='http://image.company_name.com';
 ```
+4. Run this serve on domain **gyazo.yourdomain.com**, 80 port
+
 # Setup client
 ## OS X
 Open **/Applications/Gyazo.app/Contents/Resources/script** and replace
