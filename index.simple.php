@@ -37,7 +37,7 @@ if(isset($_FILES['imagedata']['name'])) {
 	    $s3->putObjectFile($tempname, $aws_bucket, $name, S3::ACL_PUBLIC_READ);
 
 		// If you use CloudFront change settings:
-		// $imageu=$aws_site.$aws_bucket.'/'.$name;    
+		// $imageu=$aws_site.'/'.$aws_bucket.'/'.$name;     
 		// we use CloudFront
 	    $imageu = $cloudfront_site.'/'.$name;		
 
