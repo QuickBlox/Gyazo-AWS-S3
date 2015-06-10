@@ -33,7 +33,8 @@ CGI = '/index.php'
 ```
 
 ## Linux
-...
+1. Setup Gyazo http://ubuntuforums.org/showthread.php?t=1720221
+2. Replace **HOST** and **CGI** in ruby script
 
 ## Windows
 1. Get Gyazowin src code https://github.com/gyazo/Gyazowin
