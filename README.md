@@ -1,7 +1,7 @@
 # Gyazo-AWS-S3
 Script that setups Gyazo server to store images on AWS S3
 
-# Setup
+# Setup server
 1. Create **index.php** from **index.sample.php**
 2. Create **settings.php** from **settings.sample.php**
 3. Put AWS settings into **settings.php**. Example:
@@ -19,3 +19,16 @@ $aws_bucket='inpic';
 $aws_site='http://s3.amazonaws.com';
 $cloudfront_site='http://image.company_name.com';
 ```
+# Setup client
+## OS X
+Open **/Applications/Gyazo.app/Contents/Resources/script** and replace
+```ruby
+HOST = 'gyazo.yourdomain.com'
+CGI = '/index.php'
+```
+
+## Linux
+...
+
+## Windows
+...
