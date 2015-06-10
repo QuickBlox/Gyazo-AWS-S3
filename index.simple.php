@@ -42,11 +42,15 @@ if(isset($_FILES['imagedata']['name'])) {
 	    $imageu = $cloudfront_site.'/'.$name;		
 
 		//Output file url
-		if (!$pic){ echo $gyazo_url."?limage=$imageu";}
-		 // if index.php?pic=1 in client is set it will return shorted link
-		elseif($pic==1){ echo $shorten = get_bitly_short_url($imageu,$bitly_name,$bitly_key);}
-		 // if index.php?pic=2 in client is set it will return full link
-		elseif($pic==2){ echo $imageu ;}
+	    if($simple_version){
+			echo $imageu;
+	    }else{
+	    	if (!$pic){ echo $gyazo_url."?limage=$imageu";}
+		 	// if index.php?pic=1 in client is set it will return shorted link
+			elseif($pic==1){ echo $shorten = get_bitly_short_url($imageu,$bitly_name,$bitly_key);}
+		 	// if index.php?pic=2 in client is set it will return full link
+			elseif($pic==2){ echo $imageu ;}
+	    }	
 	}
 }else {
 	$limage=$_GET['limage'];
