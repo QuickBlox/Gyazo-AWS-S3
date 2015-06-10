@@ -4,7 +4,10 @@ Script that setups Gyazo server to store images on AWS S3
 # Setup server
 1. Create **index.php** from **index.sample.php**
 2. Create **settings.php** from **settings.sample.php**
-3. Put AWS settings into **settings.php**. Example:
+3. Put AWS settings into **settings.php**. 
+4. Run this serve on domain **gyazo.yourdomain.com**, 80 port
+
+Example of settings.php:
 ```php
 $company_name='your_company_name';
 
@@ -19,7 +22,7 @@ $aws_bucket='inpic';
 $aws_site='http://s3.amazonaws.com';
 $cloudfront_site='http://image.company_name.com';
 ```
-4. Run this serve on domain **gyazo.yourdomain.com**, 80 port
+
 
 # Setup client
 ## OS X
