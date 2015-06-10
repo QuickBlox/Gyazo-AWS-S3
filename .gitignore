@@ -1,2 +1,5 @@
 index.php
 settings.php
+
+# OS X
+.DS_Store
