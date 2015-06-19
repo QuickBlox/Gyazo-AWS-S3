@@ -41,6 +41,9 @@ CGI = '/index.php'
 2. Open **gyazowin.cpp** and replace settings
 3. Recompile an app
 
+## Android
+https://play.google.com/store/apps/details?id=jp.backspace.app.android.gyazo
+
 Example of updated settings:
 ```cpp
 const TCHAR* UPLOAD_SERVER	= _T("gyazo.yourdomain.com");
